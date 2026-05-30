@@ -1,5 +1,5 @@
 from django.urls import path
-from app import views
+from . import views
 
 urlpatterns = [
     path('sobre/', views.sobre, name="sobre"),

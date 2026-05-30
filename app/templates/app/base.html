@@ -24,7 +24,7 @@
                 </a>
             </div>
             <div class="container col-md-2 p-0">
-                <ul class="nav p-0">
+                <ul class="nav p-0 fs-5">
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'inicio' %}">Início</a>
                     </li>
@@ -38,8 +38,10 @@
             </div >
         </nav>
     </header>
-    {% block content %}
-    {% endblock %}
+    <main class="conteiner mt-0">
+        {% block content %}
+        {% endblock %}
+    </main>
     <footer class="py-5 bg-dark">
         <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Emilly Laviny e Jéssica Araújo, 2026</p></div>
     </footer>

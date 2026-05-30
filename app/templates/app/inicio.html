@@ -1,4 +1,29 @@
 {% extends "app/base.html" %}
+{% load static %}
+
 {% block content %}
-    <h1>Início</h1>
+
+<div class="inicio-bg">
+    <div class="container py-5 px-0 ms-5">
+        <div>
+            <img src="{% static 'app/assets/img/logoo.png'%}" alt="Fotoo" width="400" height="250" class="ms-5 mt-5 pt-5">
+        </div>
+        <div>
+            <h2 class="ms-5 mt-3 pt-2 text-white">O amor nunca morre.</h2>
+            <h4 class="ms-5 ps-3 text-white">Presos em corpos adolescentes,<br/> 
+                os irmãos vampiros rivais Stefan<br/>
+                e Damon lutam pelo amor <br/>
+                cativante de Elena.</h4>
+        </div>
+        <div>
+            <ul class="botao">
+            <li class="nav-item text-white ms-3 ps-3 mt-5">
+                <a class="botaoS" href="{% url 'elenco' %}">Saiba mais</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
+

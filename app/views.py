@@ -1,15 +1,13 @@
 from django.shortcuts import render
 
-
-
 def inicio(request):
-    return render(request,  "app/inicio.html")
+    return render(request,  'app/inicio.html')
 
 def elenco(request):
-    return render(request,  "app/elenco.html")
+    return render(request,  'app/elenco.html')
 
 def sobre(request):
-    return render(request,  "app/sobre.html")
+    return render(request,  'app/sobre.html')
 
 #def usuarios(request):
 
