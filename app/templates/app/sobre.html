@@ -2,5 +2,31 @@
 {% load static %}
 
 {% block content %}
-<h1>Sobre</h1>
+
+    <section class="sobre">
+        <div class="coluna">
+            <h2>Resumo da série</h2>
+            <p>The Vampire Diaries conta a história de Elena Gilbert,
+            uma adolescente que se envolve com os irmãos vampiros
+            Stefan e Damon Salvatore.</p>
+        </div>
+
+        <div class="imagem-central">
+            <img scr="{% static 'app/assents/imagem-central.jpg' %}" alt="">
+        </div>
+
+        <div class="coluna">
+            <h2>Autores</h2>
+            <p>informações extras</p>
+        </div>
+
+        <section class="sobre-site">
+
+            <h2>Sobre o site</h2>
+            <p>informações sobre o site</p>
+
+        </section>
+
+    </section>
+
 {% endblock %}
