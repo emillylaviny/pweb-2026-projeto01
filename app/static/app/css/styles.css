@@ -27,7 +27,7 @@
 }
 
 .elenco{
-  background-color: #5b0000;
+  background-color: #440000;
   min-height: 100vh;
   padding: 40px;
 }
@@ -65,7 +65,7 @@
 }
 
 .sobre-container{
-  background-color: #5b0000;
+  background-color: #440000;
   color: white;
   display: flex;
   justify-content: space-around;

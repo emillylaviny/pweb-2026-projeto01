@@ -4,24 +4,24 @@
 {% block content %}
 
     <section class="sobre-container">
-        <div class="resumo">
-            <h2>Resumo da série</h2>
-            <p>Diários de um Vampiro (The Vampire Diaries) é uma série de drama sobrenatural centrada em Elena Gilbert, uma adolescente que se apaixona por Stefan Salvatore, um vampiro centenário. O retorno do irmão de Stefan, o perigoso e impulsivo Damon, inicia um clássico triângulo amoroso e revela os segredos sombrios de Mystic Falls</p>
-            
-            <h2>Sobre o site</h2>
-            <p>Este espaço foi criado para reunir informações sobre uma das séries sobrenaturais mais conhecidas da televisão. Aqui, você poderá conhecer melhor os personagens e  descobrir mais sobre o universo de Mystic Falls.</p>
-        </div>
+        {% for info in informacoes %}
+            <div class="resumo">
+                <h2>{{info.titulo_resumo}}</h2>
+                <p>{{info.resumo}}</p>
+                </br>
+                <h2>{{info.titulo_sobre}}</h2>
+                <p>{{info.sobre}}</p>
+            </div>
 
-        <div class="imagem"></div>
-            <img src="/static/app/img/vampire.jpg" alt="The Vampire Diaries">
-        </div>
+            <div class="imagem">
+                <img src="{% static 'app/assets/img/'%}{{ info.imagem }}" alt="The Vampire Diaries">
+            </div>
 
-        <div class="autores">
-            <h1>Autores</h1>
-            <p>Este site foi desenvolvido por: Emilly Laviny e Araújo
-            Somos estudantes e desenvolvemos este projeto com dedicação, criatividade e interesse pela série, unindo conhecimentos de desenvolvimento web e design.
-            </p>
-        </div>
+            <div class="autores">
+                <h1>{{info.titulo_autores}}</h1>
+                <p>{{info.autores}}</p>
+            </div>
+        {% endfor %}
     </section>
 
 {% endblock %}
