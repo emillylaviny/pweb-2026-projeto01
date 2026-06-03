@@ -64,45 +64,48 @@
   padding: 0 15px 20px;
 }
 
-.sobre{
+.sobre-container{
+  background-color: #5b0000;
+  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 40px;
-  padding: 50px;
-  background-color: #5b0000;
-  color: white;
+  padding: 60px;
 }
 
-.coluna{
+.resumo h1, .autores{
   width: 30%;
   text-align: center;
 }
 
-.coluna h2{
-  margin-bottom: 15px;
-  font-size: 2rem;
+.resumo h1, .autores h1{
+  font-size: 50px;
 }
 
-.coluna p{
-  line-height: 1.6;
+.resumo h2{
+  font-size: 40px;
+  margin-top: 60px;
 }
 
-.imagem-central img{
-  width: 300px;
-  height: 300px;
+.imagem img{
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.sobre-site{
-  width: 80%;
-  margin: 50px auto;
-  text-align: center;
-  color: white;
-}
+@media (max-width: 768px){
+  .sobre-container{
+    flex-direction: column;
+    gap: 40px;
+  }
 
-.sobre-site h2{
-  font-size: 3rem;
-  margin-bottom: 20px;
+  .resumo, .aurores{
+    width: 100%;
+  }
+
+  .imagem img{
+    width: 250px;
+    height: 250px;
+  }
 }
