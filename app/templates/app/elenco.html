@@ -4,20 +4,19 @@
 {% block content %}
 
 <section class="elenco">
+    
     <h1>PERSONAGENS PRINCIPAIS</h1>
+    
     <div class="cards">
+    {% for personagem in personagens %}
         <div class="card">
-            <img scr="{% static 'app/assents/img/elena.jpg' %}" alt="">
-            <h2>Elena Gilbert</h2>
-            <p>Descrição do personagem</p>
+            <img src="{% static 'app/assets/img/'%}{{ personagem.foto }}" alt="{{personagem.nome}}">
+            <h2>{{personagem.nome}}</h2>
+            <h5>Idade: {{personagem.idade}}</h5>
+            <h5>Função: {{personagem.função}}</h5>
+            <h5>Local de nascimento: {{personagem.local_nasc}}</h5>
         </div>
-
-        <div class="card">
-            <img scr="{% static 'app/assents/img/damon.jpg' %}" alt="">
-            <h2>Damon Salvatore</h2>
-            <p>Descrição do personagem</p>
-        </div>
-
+    {% endfor %}
     </div>
 </section>
 

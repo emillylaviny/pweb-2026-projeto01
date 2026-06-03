@@ -1,5 +1,6 @@
 .nav-link{
   color: white;
+  margin-left: 15px;
 }
 
 .nav-link:hover{
@@ -7,10 +8,8 @@
 }
 
 .inicio-bg{
-    width: 100%;
-    height: 100vh;
-
-    background-image: url("../assets/img/fundo.png");
+    min-height: 100vh;
+    background-image: url('../assets/img/fundo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,14 +40,14 @@
 
 .cards{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
 .card{
   background: black;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .card img{
