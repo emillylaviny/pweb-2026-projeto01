@@ -8,12 +8,11 @@
     <h1>PERSONAGENS PRINCIPAIS</h1>
     
     <div class="cards">
-    {% for personagem in personagens %}
+    {% for personagem in elenco %}
         <div class="card">
-            <img src="{% static 'app/assets/img/'%}{{ personagem.foto }}" alt="{{personagem.nome}}">
-            <h2>{{personagem.nome}}</h2>
+            <h5>Nome: {{personagem.nome}}</h5>
             <h5>Idade: {{personagem.idade}}</h5>
-            <h5>Função: {{personagem.função}}</h5>
+            <h5>Função: {{personagem.funcao}}</h5>
             <h5>Local de nascimento: {{personagem.local_nasc}}</h5>
         </div>
     {% endfor %}
