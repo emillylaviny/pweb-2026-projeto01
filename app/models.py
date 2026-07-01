@@ -1,6 +1,7 @@
 from django.db import models
 
 class Elenco(models.Model):
+    imagem = models.ImageField(upload_to='assets/')
     nome = models.CharField(max_length=50)
     idade = models.CharField(max_length=5)
     funcao = models.CharField(max_length=50)

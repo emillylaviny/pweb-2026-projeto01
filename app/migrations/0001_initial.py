@@ -15,6 +15,7 @@ class Migration(migrations.Migration):
             name='Elenco',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('imagem', models.ImageField(upload_to='assents/')),
                 ('nome', models.CharField(max_length=50)),
                 ('idade', models.CharField(max_length=5)),
                 ('funcao', models.CharField(max_length=50)),
