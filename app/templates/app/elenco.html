@@ -10,6 +10,7 @@
     <div class="cards">
     {% for personagem in elenco %}
         <div class="card">
+            <img src="{{ personagem.imagem.url }}">
             <h5>Nome: {{personagem.nome}}</h5>
             <h5>Idade: {{personagem.idade}}</h5>
             <h5>Função: {{personagem.funcao}}</h5>

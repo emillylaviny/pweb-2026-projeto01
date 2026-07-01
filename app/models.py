@@ -1,8 +1,8 @@
 from django.db import models
 
 class Elenco(models.Model):
-    imagem = models.ImageField(upload_to='assets/')
     nome = models.CharField(max_length=50)
+    imagem = models.ImageField(upload_to='assets/')
     idade = models.CharField(max_length=5)
     funcao = models.CharField(max_length=50)
     local_nasc = models.CharField(max_length=50)
