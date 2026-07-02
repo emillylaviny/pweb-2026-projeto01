@@ -20,4 +20,4 @@ class Sobre(models.Model):
     autores = models.TextField(max_length=200)
 
     def __str__(self):
-        return self.nome
+        return self.titulo_resumo
